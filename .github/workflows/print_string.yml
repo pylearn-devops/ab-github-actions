@@ -17,7 +17,7 @@ jobs:
         uses: ab-git-actions/ab-python-action@main  # Reference to the private action repo
         with:
           message: 'This is a custom string passed from the workflow!'
-        # env:
-        #   # To access a private repo, you need a GitHub token
-        #   # Make sure the token has access to the private repo
-        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          # To access a private repo, you need a GitHub token
+          # Make sure the token has access to the private repo
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
