@@ -20,4 +20,4 @@ jobs:
         env:
           # To access a private repo, you need a GitHub token
           # Make sure the token has access to the private repo
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
