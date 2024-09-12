@@ -3,11 +3,17 @@
 
 name: Python Hello World application
 
+# on:
+#   push:
+#     branches: [ "master" ]
+#   pull_request:
+#     branches: [ "master" ]
+
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    branches:
+      - main
+  workflow_dispatch: # Allow manual triggers
 
 permissions:
   contents: read
