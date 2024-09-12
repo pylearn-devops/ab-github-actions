@@ -15,7 +15,7 @@ jobs:
         with:
           repository: ab-git-actions/ab-python-action
           ref: main
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
           path: ./.github/actions/my-private-repo
         
       - name: Run Custom Action from Private Repo
