@@ -16,10 +16,10 @@ jobs:
           repository: ab-git-actions/ab-python-action
           ref: main
           token: ${{ secrets.GH_TOKEN }}
-          path: ./.github/actions/my-private-repo
+          path: ./.github/actions/ab-python-action
         
       - name: Run Custom Action from Private Repo
-        uses: ./.github/actionsab-git-actions/ab-python-action@main  # Reference to the private action repo
+        uses: ./.github/actions/ab-python-action  # Reference to the private action repo
         with:
           message: 'This is a custom string passed from the workflow!'
         env:
